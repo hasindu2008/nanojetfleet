@@ -8,5 +8,5 @@ prefix=$2
 suffix=$3
 
 for i in $(seq 1 16); do 
-scp nanojet@10.40.18.$i:$source $prefix$i.$suffix; 
+scp nanojet@10.40.19.$i:$source $prefix$i.$suffix; 
 done
