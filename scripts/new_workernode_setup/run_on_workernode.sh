@@ -17,7 +17,7 @@ device=$1
 
 #set up the device hostname
 echo $device > /etc/hostname
-sed -i "s/rock64/$device/" /etc/hosts
+sed -i "s/nanojet/$device/" /etc/hosts
 
 #configure timezones/ntp
 #echo "Australia/Sydney" > /etc/timezone

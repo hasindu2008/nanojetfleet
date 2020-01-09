@@ -1,11 +1,11 @@
 - hosts: all
   gather_facts: no
-  remote_user: rock64
+  remote_user: nanojet
   #become: yes
   tasks:
   - name: "copyfile"
     copy:
-     src: /home/rock64/samtools-1.7/samtools
+     src: /home/nanojet/samtools-1.7/samtools
      dest: /nanopore/bin/samtools
      #owner: root
      #group: root

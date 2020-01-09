@@ -1,6 +1,6 @@
 - hosts: all
   gather_facts: no
-  remote_user: rock64
+  remote_user: nanojet
   become: yes
   tasks:
   - name: "editline"
