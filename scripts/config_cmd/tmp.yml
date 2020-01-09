@@ -1,0 +1,6 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  tasks:
+  - name: "command"
+    shell: dd if=/storage/hs37d5.fasta of=/dev/null bs=8k

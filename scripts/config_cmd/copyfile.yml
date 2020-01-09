@@ -1,0 +1,13 @@
+- hosts: all
+  gather_facts: no
+  remote_user: rock64
+  #become: yes
+  tasks:
+  - name: "copyfile"
+    copy:
+     src: /home/rock64/samtools-1.7/samtools
+     dest: /nanopore/bin/samtools
+     #owner: root
+     #group: root
+     mode: 0744
+

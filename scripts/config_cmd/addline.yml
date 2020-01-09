@@ -1,0 +1,12 @@
+- hosts: all
+  gather_facts: no
+  remote_user: rock64
+  become: yes
+  tasks:
+  - name: "editline"
+    lineinfile:
+     dest: /etc/fstab
+     #line: 'tmpfs   /ramdisk tmpfs   nodev,nosuid,noexec,nodiratime,size=400M   0 0'
+     #line: '//192.168.1.10/share2 /storage cifs credentials=/home/odroid/.smbpasswd,iocharset=utf8,sec=ntlm,uid=odroid  0  0'		
+     #line: '10.0.0.5:/volume1/homes/    /mnt    nfs     intr,nfsvers=3,rsize=8192,wsize=8192       0       0'
+     line: '10.0.0.5:/volume2/scratch_nas         /scratch_nas    nfs     intr,nfsvers=3,rsize=8192,wsize=8192       0       0'	
