@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ansible all -m shell -a "poweroff" -K --become
+ansible all -m shell -a "poweroff"
 #sudo reboot
 
