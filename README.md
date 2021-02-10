@@ -15,7 +15,7 @@ A cluster of Jetson development boards connected to each other using Gigabit Eth
 | Jetson Xavier development kits           |            2   |                                         |  
 | NVMe SSD drives                         |            2   | Extra storage for Jetson Xaviers                                        |  
 | Copper cylinders (thread Diameter: M2.5)                        |            ~200   |   To stack the Jetson Nanos together                                      |  
-
+| Ubiquti EdgeRouter X                   |            1   |   To provide Internet access to the nodes through NAT                                    |  
 Note that the quantities can be varied as per your choice and budget. Jetson Xaviers are optional, you can make a cluster solely using Jetson Nanos.
 
 ### Connecting nodes together
@@ -33,12 +33,12 @@ Note that the quantities can be varied as per your choice and budget. Jetson Xav
   - Assigning IP addresses to the nodes
     There is a few ways this can be done.
     1. Assigning static IP addresses to each and every node manually
-    2. Configuring a DHCP server on the switch if available (not available on the above switch)
+    2. Configuring a DHCP server on the switch or the NAT router if available (DHCP server is available on the above NAT router and this is the method we use)
     3. Installing and configuring a DHCP server on one of the nodes (see [here](https://www.tecmint.com/install-dhcp-server-in-ubuntu-debian/))
 
   - Providing Internet to the nodes
     There are a few ways again
-    1. Using a NAT Switch
+    1. Using a NAT router (we use this method)
     2. Connecting a USB ethernet adaptor to one of the nodes and configuring for NAT
 
 
