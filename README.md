@@ -71,7 +71,7 @@ The node which will be used to control, connect and assign work to the other *wo
 
   ```
 
-  You have to edit the configuration files `/etc/ganglia/gmetad.conf`  and /etc/`ganglia/gmond.conf`. Our sample config files are at [scripts/sample_config/ganglia](scripts/sample_config/ganglia).
+  You have to edit the configuration files `/etc/ganglia/gmetad.conf`  and /etc/`ganglia/gmond.conf`. Our sample config files are at [sample_config/ganglia](sample_config/ganglia).
 
   You may refer [here](https://hostpresto.com/community/tutorials/how-to-install-and-configure-ganglia-monitor-on-ubuntu-16-04/) for a tutorial on installing and configuring ganglia.
 
